@@ -1,1 +1,2 @@
 # iNeuron-Placement-main
+A website built using streamlit that predicts whther user will be placed or not on the basis of gender,ssc percentage,ssc board,hsc percentage,hsc board,hsc stream,degree percentage,degree type,work experience,e-test percentage,specializtion,MBA percentage and package expectaion. Finally, the web app is deployed on Heroku. For live demonstration :- https://ineuron-placement-main.herokuapp.com/
