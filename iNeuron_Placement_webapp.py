@@ -50,32 +50,32 @@ def main():
     algo_option=st.sidebar.selectbox('',algos)
     st.subheader(algo_option)
     
-    st.markdown('<h3><b>Your Gender</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>Your Gender</b></h4>', unsafe_allow_html=True)
     gender_radio = st.radio (label="", options=("Male","Female"))
     if gender_radio=='Male':
         gender = 0
     elif gender_radio=='Female':
         gender = 1
     
-    st.markdown('<h3><b>SSC Percentage(%)</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>SSC Percentage(%)</b></h4>', unsafe_allow_html=True)
     ssc_p = st.text_input(label='',value='in %',key='0')
-    st.markdown('<h3><b>SSC Board</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>SSC Board</b></h4>', unsafe_allow_html=True)
     ssc_board = st.selectbox(label="",options=["Central","Others"],key='0')
     if ssc_board=='Others':
         ssc_b = 1
     elif ssc_board=='Central':
         ssc_b = 0
     
-    st.markdown('<h3><b>HSC Percentage(%)</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>HSC Percentage(%)</b></h4>', unsafe_allow_html=True)
     hsc_p = st.text_input(label="",value='in %',key='1')
-    st.markdown('<h3><b>HSC Board</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>HSC Board</b></h4>', unsafe_allow_html=True)
     hsc_board = st.selectbox(label="",options=["Central","Others"],key='1')
     if hsc_board=='Others':
         hsc_b = 1
     elif hsc_board=='Central':
         hsc_b = 0
     
-    st.markdown('<h3><b>HSC Stream</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>HSC Stream</b></h4>', unsafe_allow_html=True)
     hsc_stream = st.selectbox(label='',options=["Commerce","Science","Arts"],key='2')
     if hsc_stream=='Commerce':
         hsc_s = 1
@@ -84,9 +84,9 @@ def main():
     elif hsc_stream== 'Arts':
         hsc_s = 0
     
-    st.markdown('<h3><b>Degree Percentage(%)</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>Degree Percentage(%)</b></h4>', unsafe_allow_html=True)
     degree_p = st.text_input(label='',value='in %',key='2')
-    st.markdown('<h3><b>Degree Type</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>Degree Type</b></h4>', unsafe_allow_html=True)
     degree_type = st.selectbox(label='',options=["Science & Technology","Commerce & Management","Others"],key='3')
     if degree_type=='Science & Technology':
         degree_t = 2
@@ -95,27 +95,27 @@ def main():
     elif degree_type=='Others':
         degree_t = 1
     
-    st.markdown('<h3><b>Do you have work-experience ?</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>Do you have work-experience ?</b></h4>', unsafe_allow_html=True)
     work_exp = st.radio (label="", options=("Yes","No"))
     if work_exp=='Yes':
         workex = 1
     elif work_exp=='No':
         workex = 0
     
-    st.markdown('<h3><b>e-Test Percentage(%)</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>e-Test Percentage(%)</b></h4>', unsafe_allow_html=True)
     etest_p = st.text_input(label='',value='in %',key='3')
     
-    st.markdown('<h3><b>Done specialisation in</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>Done specialisation in</b></h4>', unsafe_allow_html=True)
     specialisation = st.radio (label="", options=("Marketing & HR","Marketing & Finance"))
     if specialisation=='Marketing & HR':
         spec = 1
     elif specialisation=='Marketing & Finance':
         spec = 0
     
-    st.markdown('<h3><b>MBA Percentage(%)</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>MBA Percentage(%)</b></h4>', unsafe_allow_html=True)
     mba_p = st.text_input(label='',value='in %',key='4')
     
-    st.markdown('<h3><b>Package Expectation(in Lakhs)</b></h3>', unsafe_allow_html=True)
+    st.markdown('<h4><b>Package Expectation(in Lakhs)</b></h4>', unsafe_allow_html=True)
     salary = st.text_input(label='',value='in Lakh',key='5')
     
     X = df.drop('status', axis=1) 
